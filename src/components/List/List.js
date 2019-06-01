@@ -8,7 +8,7 @@ import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
 
 class List extends React.Component {
-    state={
+    state = {
         columns: this.props.columns || [],
     }
     static propTypes = {
@@ -16,17 +16,17 @@ class List extends React.Component {
         description: PropTypes.node,
         columns: PropTypes.array,
     };
-    static defaultProps ={
+    static defaultProps = {
         description: settings.defaultListDescription,
     };
 
-    addColumn(title){
+    addColumn(title) {
         this.setState(state => (
             {
                 columns: [
                     ...state.columns,
                     {
-                        key: state.columns[state.columns.length-1].key+1,
+                        key: state.columns[state.columns.length - 1].key + 1,
                         title,
                         icon: 'list-alt',
                         cards: []
@@ -36,14 +36,14 @@ class List extends React.Component {
         ));
     }
 
-        render() {
-            return (
+    render() {
+        return (
             <section className={styles.component}>
-               <Hero title={this.props.title}/>
+                <Hero title={this.props.title}/>
 
-               <div className={styles.description}>
-                   {ReactHtmlParser(this.props.description)}
-               </div>
+                <div className={styles.description}>
+                    {ReactHtmlParser(this.props.description)}
+                </div>
                 <div className={styles.columns}>
                     {this.state.columns.map(({key, ...columnProps}) => (<Column key={key} {...columnProps} />
                     ))} </div>

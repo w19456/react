@@ -9,13 +9,13 @@ import Icon from "../Icon/Icon";
 
 
 class Column extends React.Component {
-    state={
+    state = {
         title: this.props.title || '',
         cards: this.props.cards || [],
     };
 
-    addCard(title){
-        const newKey = this.state.cards.length>0 ? this.state.cards.length+1 :0;
+    addCard(title) {
+        const newKey = this.state.cards.length > 0 ? this.state.cards.length + 1 : 0;
         this.setState(state => (
             {
                 cards: [
