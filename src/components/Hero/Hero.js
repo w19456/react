@@ -7,7 +7,7 @@ class Hero extends React.Component {
     render() {
         return (
             <header className={styles.component}>
-                <h2 className={styles.title}>{ReactHtmlParser(this.props.titleText)}</h2>
+                <h2 className={styles.title}>{ReactHtmlParser(this.props.title)}</h2>
                 <img className={styles.image} alt="" src="http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"/>
             </header>
         )
@@ -15,6 +15,6 @@ class Hero extends React.Component {
 }
 
 Hero.propTypes = {
-    titleText: PropTypes.node.isRequired,
+    title: PropTypes.node.isRequired,
 };
 export default Hero;

@@ -39,7 +39,8 @@ class List extends React.Component {
         render() {
             return (
             <section className={styles.component}>
-               <Hero titleText={this.props.title}/>
+               <Hero title={this.props.title}/>
+
                <div className={styles.description}>
                    {ReactHtmlParser(this.props.description)}
                </div>
@@ -47,8 +48,10 @@ class List extends React.Component {
                     {this.state.columns.map(({key, ...columnProps}) => (<Column key={key} {...columnProps} />
                     ))} </div>
                 <div className={styles.creator}>
+
                     <Creator text={settings.columnCreatorText} action={this.addColumn.bind(this)}/>
                 </div>
+
             </section>
 
         )
