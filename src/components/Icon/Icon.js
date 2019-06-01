@@ -1,5 +1,10 @@
 import React from 'react';
 
-const Icon = props => (<i className={`fas fa-${props.name}`}></i>);
+class Icon extends React.Component {
+    render() {
+        return (
+            <i className={`fas fa-${this.props.name}`}/>)
+    }
+};
 
 export default Icon;
