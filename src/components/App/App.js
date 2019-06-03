@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './App.scss';
 import List from '../List/List.js';
 import {pageContents, listData} from "../../data/dataStore";
+import Creator from "../Creator/Creator";
 
 class App extends React.Component {
     render() {
