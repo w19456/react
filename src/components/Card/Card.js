@@ -14,9 +14,9 @@ class Card extends React.Component {
 
 
     render() {
-        console.log("RENDER", this);
+        const {title} = this.props;
         return (
-            <h3 className={styles.component}>{ReactHtmlParser(this.state.title)}</h3>
+            <h3 className={styles.component}>{ReactHtmlParser(title)}</h3>
 
         )
     }
