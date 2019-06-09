@@ -4,13 +4,14 @@ import columnsReducer from './columnsRedux.js';
 import cardsReducer from './cardsRedux.js';
 import reducer from './searchStringRedux.js';
 
+
 // define initial state and shallow-merge initial data
 const initialState = {
     app: initialStoreData.app,
     lists: initialStoreData.lists,
     columns: initialStoreData.columns,
     cards: initialStoreData.cards,
-    searchString: 'the',
+    searchString: '',
 };
 
 // define reducers

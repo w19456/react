@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import Column from './Column';
 import {getCardsForColumn, createAction_addCard} from '../../redux/cardsRedux.js';
 
+
 const mapStateToProps = (state, props) => ({
     cards: getCardsForColumn(state, props.id),
 });
