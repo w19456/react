@@ -19,58 +19,7 @@ export const pageContents = {
     subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
-export const listData = {
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-    columns: [
-        {
-            key: 0,
-            title: 'Books',
-            icon: 'book',
-            cards: [
-                {
-                    key: 0,
-                    title: 'This Is Going to Hurt',
-                },
-                {
-                    key: 1,
-                    title: 'Interpreter of Maladies',
-                },
-            ],
-        },
-        {
-            key: 1,
-            title: 'Movies',
-            icon: 'film',
-            cards: [
-                {
-                    key: 0,
-                    title: 'Harry Potter',
-                },
-                {
-                    key: 1,
-                    title: 'Star Wars',
-                },
-            ],
-        },
-        {
-            key: 2,
-            title: 'Games',
-            icon: 'gamepad',
-            cards: [
-                {
-                    key: 0,
-                    title: 'The Witcher',
-                },
-                {
-                    key: 1,
-                    title: 'Skyrim',
-                },
-            ],
-        },
-    ],
-};
+
 const lists = [
     {
         id: 'list-1',
@@ -79,6 +28,15 @@ const lists = [
         image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
     },
 ];
+
+export const hero =
+    {
+        id: 'list-1',
+        title: 'Things to do <sup>soon!</sup>',
+        description: 'Interesting things I want to check out!',
+        image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    }
+;
 
 const columns = [
     {
@@ -139,6 +97,28 @@ const cards = [
         title: 'Skyrim',
     },
 ];
+
+export const infos = {
+    title: 'This is a placeholder for INFO',
+    image: 'https://images.pexels.com/photos/929676/pexels-photo-929676.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\n' +
+        'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n' +
+        'aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+        'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n' +
+        'culpa qui officia deserunt mollit anim id est laborum.',
+
+}
+
+export const FAQs = {
+    title: 'This is a placeholder for FAQ',
+    image: 'https://images.pexels.com/photos/36485/ladybug-flight-beetle-insect.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore\n' +
+        'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n' +
+        'aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n' +
+        'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n' +
+        'culpa qui officia deserunt mollit anim id est laborum.',
+
+}
 
 const initialStoreData = {
     app: {...pageContents},
